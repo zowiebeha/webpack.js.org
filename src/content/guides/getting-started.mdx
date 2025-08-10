@@ -90,10 +90,10 @@ document.body.appendChild(component());
   <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <script defer src="https://unpkg.com/lodash@4.17.20"></script>
+    <script defer src="./src/index.js"></script>
   </head>
   <body>
-    <script src="./src/index.js"></script>
   </body>
 </html>
 ```
@@ -191,11 +191,11 @@ Now, since we'll be bundling our scripts, we have to update our `index.html` fil
    <head>
      <meta charset="utf-8" />
      <title>Getting Started</title>
--    <script src="https://unpkg.com/lodash@4.17.20"></script>
+-    <script defer src="https://unpkg.com/lodash@4.17.20"></script>
+-    <script defer src="./src/index.js"></script>
++    <script defer src="main.js"></script>
    </head>
    <body>
--    <script src="./src/index.js"></script>
-+    <script src="main.js"></script>
    </body>
  </html>
 ```
